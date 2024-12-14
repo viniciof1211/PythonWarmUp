@@ -1,12 +1,12 @@
 # Entry Point -  it's dynamically typed (Python)
 
-from FizzBuzz import fizzBuzz
-from palindrome import palindrome
-from anagram import is_anagram
-from bubble_sort import bubble_sort
-from factorial import factorial_iterative
-from factorial import factorial_recursive
-from etl import etl_pipeline
+from examples.challenges import fizzBuzz
+from examples.challenges import palindrome
+from examples.challenges import is_anagram
+from examples.challenges import bubble_sort
+from examples.challenges import factorial_iterative
+from examples.challenges import factorial_recursive
+from examples.challenges import etl_pipeline
 
 def main():
     print(fizzBuzz(101))
