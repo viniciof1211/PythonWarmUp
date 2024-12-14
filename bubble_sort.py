@@ -1,4 +1,4 @@
-# Implementation of Bubble Sort O(n^2)
+# Implementation of Bubble Sort O(n^2)  it's dynamically typed
 
 def bubble_sort(array):
     for i in range(len(array)):
