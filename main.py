@@ -1,4 +1,4 @@
-# Entry Point
+# Entry Point -  it's dynamically typed (Python)
 
 from FizzBuzz import fizzBuzz
 from palindrome import palindrome

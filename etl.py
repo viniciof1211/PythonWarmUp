@@ -1,4 +1,4 @@
-# Implement an ETL Pipeline kind of behaviour
+# Implement an ETL Pipeline kind of behaviour (it's dynamically typed)
 
 def etl_pipeline(data):
     extracted = [d.strip() for d in data]
