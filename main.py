@@ -17,6 +17,8 @@ from examples.challenges import factorial_recursive
 from examples.challenges import etl_pipeline
 from examples.challenges import build_sll
 from examples.challenges import binary_search
+from examples.challenges import two_sum
+from examples.challenges import MinHeap
 
 def estimate_big_o(input_sizes, times):
     growth_factors = []
@@ -76,6 +78,19 @@ def main():
         print(f"Target found: {target}: {str(found)}")
 
     print("Big-O Time Complexity: " + estimate_big_o(input_sizes, times))
+
+    #######################################################################
+
+    nums = [1,40,0,100,10,10**100,2,3,4,5,66,677,7,8**9]
+    print(f"Two numbers that add up 42 inside the following array {str(nums)} natural integers: {str(two_sum(nums, 42))}")
+
+    my_heap = MinHeap()
+    for n in nums:
+        my_heap.push(n)
+
+    while not my_heap.is_empty():
+        n = my_heap.pop()
+        print(f"My Heap: {str(n)}")
 
 if __name__ == "__main__":
     main()
