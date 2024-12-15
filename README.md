@@ -18,6 +18,7 @@ This repository contains a collection of Python algorithms, implemented in the s
 - **Binary Search:** Perform binary search on a sorted list.
 - **Two Sum Problem:** Find two numbers in a list that add up to a target.
 - **Reverse a Linked List:** Reverse a singly linked list.
+- **Harmony Sort:** Parallelized sorting algorithm that partitions an array into harmonic buckets, sorts them independently, and merges them harmoniously, achieving __𝑂(𝑛 log 𝑘)__ complexity when 𝑘 partitions are processed in parallel.
 
 ### **2. Unusual Python Coding Challenges**
 - **Data Pipeline Simulation:** Simulate an ETL pipeline with basic transformations.
