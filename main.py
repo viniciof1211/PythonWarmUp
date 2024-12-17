@@ -25,6 +25,7 @@ from examples.challenges import two_sum
 from examples.challenges import MinHeap
 from examples.challenges import json_to_csv
 from examples.challenges import harmony_sort
+from examples.ta_amei_mikra import generate_cantillations
 
 def estimate_big_o(input_sizes, times, k=None):
     input_sizes = np.array(input_sizes)
@@ -154,6 +155,7 @@ def main():
 
     input_sz = []
     runtimes = []
+
     for i in range(0, 10):
         start_time = time.time()
         print(f"Harmony_Sort(Len: {len(nums)}) = {harmony_sort(nums, 10, 4)}")
@@ -162,6 +164,7 @@ def main():
         input_sz.append(len(nums))
         runtimes.append(runtime)
     print(f"Big-O Time Complexity ({max(runtimes)} seconds): {estimate_big_o(input_sz, runtimes)}")
+    generate_cantillations()
 
 
 if __name__ == "__main__":
