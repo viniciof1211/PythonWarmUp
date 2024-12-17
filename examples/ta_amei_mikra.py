@@ -5,7 +5,7 @@ from docx.shared import Pt
 doc = Document()
 
 # Add Title
-doc.add_heading("Ta''amei Mikra: Harmony in Chanting, Coding, and Real-Life Algorithms", level=1)
+doc.add_heading("Ta'amei Mikra: Harmony in Chanting, Coding, and Real-Life Algorithms", level=1)
 
 # Set Times New Roman font for the whole document
 style = doc.styles['Normal']
@@ -15,7 +15,7 @@ font.size = Pt(22)
 
 # Data for Ta'amei Mikra
 data = {
-    "Ta''am Name": [
+    "Ta'am Name": [
         "Etnachta ֑", "Sof Pasuk ֽ", "Zakef Gadol ֔", "Zakef Katan ֕", "Segol ֡", "Revia ֗",
         "Munach ֣", "Tipcha ֛", "Mercha ֥", "Kadma ֨", "Azla ֦", "Shalshelet ֓", "Pashta ֙",
         "Tlisha Gedola ֜", "T''lisha Ketana ֩", "Yerach Ben Yomo ֬", "Pazer ֙", "Telisha Ketana ֭"
@@ -87,7 +87,7 @@ def generate_cantillations():
     table = doc.add_table(rows=1, cols=4)
     table.style = 'Table Grid'
     hdr_cells = table.rows[0].cells
-    hdr_cells[0].text = "Ta''am Name"
+    hdr_cells[0].text = "Ta'am Name"
     hdr_cells[1].text = "Chanting Function"
     hdr_cells[2].text = "Coding Metaphor"
     hdr_cells[3].text = "Real-Life Example"
