@@ -5,7 +5,7 @@ from docx.shared import Pt
 doc = Document()
 
 # Add Title
-doc.add_heading("Ta'amei Mikra: Harmony in Chanting, Coding, and Real-Life Algorithms", level=1)
+doc.add_heading("Ta_amei Mikra: Harmony in Chanting, Coding, and Real-Life Algorithms", level=1)
 
 # Set Times New Roman font for the whole document
 style = doc.styles['Normal']
@@ -15,10 +15,10 @@ font.size = Pt(22)
 
 # Data for Ta'amei Mikra
 data = {
-    "Ta'am Name": [
+    "Ta_am Name": [
         "Etnachta ֑", "Sof Pasuk ֽ", "Zakef Gadol ֔", "Zakef Katan ֕", "Segol ֡", "Revia ֗",
         "Munach ֣", "Tipcha ֛", "Mercha ֥", "Kadma ֨", "Azla ֦", "Shalshelet ֓", "Pashta ֙",
-        "Tlisha Gedola ֜", "T''lisha Ketana ֩", "Yerach Ben Yomo ֬", "Pazer ֙", "Telisha Ketana ֭"
+        "Tlisha Gedola ֜", "Tlisha Ketana ֩", "Yerach Ben Yomo ֬", "Pazer ֙", "Telisha Ketana ֭"
     ],
     "Chanting Function": [
         "A main pause, halfway through a verse, like a semicolon.",
@@ -87,15 +87,15 @@ def generate_cantillations():
     table = doc.add_table(rows=1, cols=4)
     table.style = 'Table Grid'
     hdr_cells = table.rows[0].cells
-    hdr_cells[0].text = "Ta'am Name"
+    hdr_cells[0].text = "Ta_am Name"
     hdr_cells[1].text = "Chanting Function"
     hdr_cells[2].text = "Coding Metaphor"
     hdr_cells[3].text = "Real-Life Example"
 
     # Populate the table
-    for index in range(len(data['Ta''am Name'])):
+    for index in range(len(data["Ta_am Name"])):
         row_cells = table.add_row().cells
-        row_cells[0].text = data['Ta''am Name'][index]
+        row_cells[0].text = data['Ta_am Name'][index]
         row_cells[1].text = data['Chanting Function'][index]
         row_cells[2].text = data['Coding Metaphor'][index]
         row_cells[3].text = data['Real-Life Example'][index]
